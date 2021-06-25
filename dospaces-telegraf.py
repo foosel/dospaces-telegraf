@@ -37,4 +37,4 @@ size = latest["Size"]
 difference = datetime.datetime.now(datetime.timezone.utc) - lastmodified
 hours = difference.total_seconds() / 3600
 
-print(f"latest_s3_file s3=digitalocean,region={SPACES_REGION},bucket={SPACES_BUCKET},prefix={SPACES_PREFIX} name={name},lastmodified={lastmodified.timestamp()},size={size},hoursago={hours}")
+print(f'latest_dospaces_file,region={SPACES_REGION},bucket={SPACES_BUCKET},prefix={SPACES_PREFIX} name="{name}",lastmodified={lastmodified.timestamp()},size={size},hoursago={hours}')
