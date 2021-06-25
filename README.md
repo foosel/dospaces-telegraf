@@ -1,4 +1,4 @@
-# dospaces-telegraf
+# 🔨 dospaces-telegraf
 
 A small Python tool to fetch latest file from a Digital Ocean Spaces (S3) container and export it in influx compatible format. Useful for verifying backup exports working correctly via telegraf's `exec` input.
 
@@ -31,7 +31,7 @@ Basic command line usage:
 
 Example output:
 
-    latest_dospaces_file,region=ams3,bucket=mybucket,prefix=some/prefix name=some/prefix/backup.tar.gz,lastmodified=1624610715.382,size=3103508917,hoursago=2.0207358125
+    latest_dospaces_file,region=ams3,bucket=mybucket,prefix=some/prefix name="some/prefix/backup.tar.gz",lastmodified=1624610715.382,size=3103508917,hoursago=2.0207358125
 
 Example telegraf configuration:
 
